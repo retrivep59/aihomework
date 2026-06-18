@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p ~/.gmail-mcp && [ -n \"$GMAIL_CREDENTIALS\" ] && echo \"$GMAIL_CREDENTIALS\" > ~/.gmail-mcp/credentials.json; [ -n \"$GMAIL_OAUTH_KEYS\" ] && echo \"$GMAIL_OAUTH_KEYS\" > ~/.gmail-mcp/gcp-oauth.keys.json; true"
+          }
+        ]
+      }
+    ]
+  }
+}
